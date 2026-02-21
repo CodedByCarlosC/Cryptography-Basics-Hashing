@@ -48,6 +48,9 @@ Public key cryptography helps enforce:
 
 Learned how RSA performs encryption and decryption using modular arithmetic and why large primes are essential for security.
 
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/ssh%20private%20keys.PNG)
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/rsa%20key.PNG)
+
 ---
 
 ## 🔹 Diffie-Hellman Key Exchange
@@ -102,7 +105,10 @@ Learned how browsers validate certificates and how Certificate Authorities estab
   - Signing vs encrypting  
   - Key expiration  
   - Import/export  
-- Practiced decrypting encrypted files  
+- Practiced decrypting encrypted files
+
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/gpg%20decrypt.PNG)
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/gpg.PNG)
 
 Reinforced understanding of public/private key cryptography in secure communication workflows.
 
@@ -118,6 +124,8 @@ Hashing is:
 - Designed to resist reversal  
 
 Any small change in input results in a drastically different output (avalanche effect).
+
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/finding%20the%20exact%20hash%20type%20then%20hash.PNG)
 
 ---
 
@@ -146,7 +154,9 @@ Observed how even a one-bit difference produces completely different hash output
 
 - Storing passwords in plaintext  
 - Using outdated encryption  
-- Using unsalted MD5/SHA1  
+- Using unsalted MD5/SHA1
+
+![iamge alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/hashs.PNG)
 
 ---
 
@@ -194,17 +204,23 @@ Process:
 ### Hashcat (GPU-Accelerated)
 hashcat -m <hash_type> -a <attack_mode> hashfile wordlist
 
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/hashcat.PNG)
 
 - `-m` = hash mode number  
 - `-a 0` = straight attack  
-- Used `rockyou.txt` for practical cracking  
+- Used `rockyou.txt` for practical cracking
+
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/rockyou%20top%2020.PNG)
 
 Explored cracking:
 - Bcrypt  
 - SHA256  
 - SHA512  
 - yescrypt  
-- HMAC variants  
+- HMAC variants
+
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/cracking%20hash.PNG)
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/crack%20ssh.PNG)
 
 ---
 
@@ -214,12 +230,15 @@ Explored cracking:
 - Works well in virtual machines  
 - Supports many hash formats  
 
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/cracking%20zip%20files%20passwords.PNG)
+
+
 ---
 
 ## 🔹 Linux Hash Recognition
 
 Examined `/etc/shadow` format:
-
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/cracking%20hashes%20with%20shadow.PNG)
 
 
 Basic syntax:
@@ -242,7 +261,9 @@ Common prefixes:
 
 - NTLM (variant of MD4)  
 - Stored in SAM database  
-- Context is critical when identifying hash types  
+- Context is critical when identifying hash types
+
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/nt%20with%20errors.PNG)
 
 ---
 
@@ -255,6 +276,8 @@ Hashing ensures files have not been modified.
 - Learned how PGP-signed checksum files provide additional trust  
 
 Also explored duplicate file detection via hash comparison.
+
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/sha256sum.PNG)
 
 ---
 
@@ -280,13 +303,17 @@ HMAC ensures both integrity and authenticity of messages.
 ## Encoding
 - Reversible  
 - Used for compatibility (UTF-8, Base64)  
-- Does NOT provide security  
+- Does NOT provide security
+
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/whirlpool.PNG)
 
 ## Encryption
 - Reversible with a key  
 - Protects confidentiality  
 
 Practiced Base64 encoding and decoding to reinforce the distinction.
+
+![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/decode%20hassh.PNG)
 
 ---
 
