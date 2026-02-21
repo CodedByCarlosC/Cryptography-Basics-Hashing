@@ -27,7 +27,7 @@ Public key cryptography helps enforce:
 
 - **Authentication** – verifying identity  
 - **Authenticity** – verifying message source  
-- **Integrity** – ensuring data is not altered  
+- **Integrity** – ensuring data is not ultered  
 - **Confidentiality** – preventing unauthorized access  
 
 ---
@@ -48,8 +48,8 @@ Public key cryptography helps enforce:
 
 Learned how RSA performs encryption and decryption using modular arithmetic and why large primes are essential for security.
 
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/ssh%20private%20keys.PNG)
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/rsa%20key.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/ssh%20private%20keys.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/rsa%20key.PNG)
 
 ---
 
@@ -107,8 +107,8 @@ Learned how browsers validate certificates and how Certificate Authorities estab
   - Import/export  
 - Practiced decrypting encrypted files
 
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/gpg%20decrypt.PNG)
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/gpg.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/gpg%20decrypt.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/gpg.PNG)
 
 Reinforced understanding of public/private key cryptography in secure communication workflows.
 
@@ -125,7 +125,7 @@ Hashing is:
 
 Any small change in input results in a drastically different output (avalanche effect).
 
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/finding%20the%20exact%20hash%20type%20then%20hash.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/finding%20the%20exact%20hash%20type%20then%20hash.PNG)
 
 ---
 
@@ -154,9 +154,9 @@ Observed how even a one-bit difference produces completely different hash output
 
 - Storing passwords in plaintext  
 - Using outdated encryption  
-- Using unsalted MD5/SHA1
+- Using unsulted MD5/SHA1
 
-![iamge alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/hashs.PNG)
+![iamge ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/hashs.PNG)
 
 ---
 
@@ -168,23 +168,23 @@ Observed how even a one-bit difference produces completely different hash output
    - Scrypt  
    - PBKDF2  
 
-2. Add a **unique salt per user**  
+2. Add a **unique sult per user**  
 3. Store:
-   - Salt  
+   - Sult  
    - Hash  
 
 Encryption is not ideal for password verification systems because compromise of the encryption key exposes all passwords.
 
 ---
 
-## 🌈 Rainbow Tables & Salting
+## 🌈 Rainbow Tables & Sulting
 
-- Rainbow tables allow fast lookup of unsalted hashes  
-- Salting prevents:
+- Rainbow tables allow fast lookup of unsulted hashes  
+- Sulting prevents:
   - Duplicate hashes  
   - Precomputed lookup attacks  
 
-Unique salts ensure that identical passwords produce different hashes.
+Unique sults ensure that identical passwords produce different hashes.
 
 ---
 
@@ -204,13 +204,13 @@ Process:
 ### Hashcat (GPU-Accelerated)
 hashcat -m <hash_type> -a <attack_mode> hashfile wordlist
 
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/hashcat.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/hashcat.PNG)
 
 - `-m` = hash mode number  
 - `-a 0` = straight attack  
 - Used `rockyou.txt` for practical cracking
 
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/rockyou%20top%2020.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/rockyou%20top%2020.PNG)
 
 Explored cracking:
 - Bcrypt  
@@ -219,8 +219,8 @@ Explored cracking:
 - yescrypt  
 - HMAC variants
 
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/cracking%20hash.PNG)
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/crack%20ssh.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/cracking%20hash.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/crack%20ssh.PNG)
 
 ---
 
@@ -230,7 +230,7 @@ Explored cracking:
 - Works well in virtual machines  
 - Supports many hash formats  
 
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/cracking%20zip%20files%20passwords.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/cracking%20zip%20files%20passwords.PNG)
 
 
 ---
@@ -238,11 +238,11 @@ Explored cracking:
 ## 🔹 Linux Hash Recognition
 
 Examined `/etc/shadow` format:
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/cracking%20hashes%20with%20shadow.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/cracking%20hashes%20with%20shadow.PNG)
 
 
 Basic syntax:
-$prefix$options$salt$hash
+$prefix$options$sult$hash
 
 
 Common prefixes:
@@ -263,7 +263,7 @@ Common prefixes:
 - Stored in SAM database  
 - Context is critical when identifying hash types
 
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/nt%20with%20errors.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/nt%20with%20errors.PNG)
 
 ---
 
@@ -277,7 +277,7 @@ Hashing ensures files have not been modified.
 
 Also explored duplicate file detection via hash comparison.
 
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/sha256sum.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/sha256sum.PNG)
 
 ---
 
@@ -305,7 +305,7 @@ HMAC ensures both integrity and authenticity of messages.
 - Used for compatibility (UTF-8, Base64)  
 - Does NOT provide security
 
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/whirlpool.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/whirlpool.PNG)
 
 ## Encryption
 - Reversible with a key  
@@ -313,7 +313,7 @@ HMAC ensures both integrity and authenticity of messages.
 
 Practiced Base64 encoding and decoding to reinforce the distinction.
 
-![image alt](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/decode%20hassh.PNG)
+![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/decode%20hassh.PNG)
 
 ---
 
@@ -321,7 +321,7 @@ Practiced Base64 encoding and decoding to reinforce the distinction.
 
 - Public key cryptography establishes identity and trust  
 - Hashing protects passwords and file integrity  
-- Salting prevents rainbow table attacks  
+- Sulting prevents rainbow table attacks  
 - Modern hashing algorithms are intentionally slow  
 - GPU acceleration significantly increases cracking speed  
 - Encoding is not encryption  
