@@ -27,7 +27,7 @@ Public key cryptography helps enforce:
 
 - **Authentication** – verifying identity  
 - **Authenticity** – verifying message source  
-- **Integrity** – ensuring data is not ultered  
+- **Integrity** – ensuring data is not altered  
 - **Confidentiality** – preventing unauthorized access  
 
 ---
@@ -123,7 +123,7 @@ Hashing is:
 - Fixed-length output  
 - Designed to resist reversal  
 
-Any small change in input results in a drastically different output (avalanche effect).
+Any small change in input resalts in a drastically different output (avalanche effect).
 
 ![image ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/finding%20the%20exact%20hash%20type%20then%20hash.PNG)
 
@@ -154,7 +154,7 @@ Observed how even a one-bit difference produces completely different hash output
 
 - Storing passwords in plaintext  
 - Using outdated encryption  
-- Using unsulted MD5/SHA1
+- Using unsalted MD5/SHA1
 
 ![iamge ult](https://github.com/CodedByCarlosC/Cryptography-Basics-Hashing/blob/f7ff39c356278a1868b16e14c364bc8a8a1d9112/hashs.PNG)
 
@@ -168,23 +168,23 @@ Observed how even a one-bit difference produces completely different hash output
    - Scrypt  
    - PBKDF2  
 
-2. Add a **unique sult per user**  
+2. Add a **unique salt per user**  
 3. Store:
-   - Sult  
+   - salt  
    - Hash  
 
 Encryption is not ideal for password verification systems because compromise of the encryption key exposes all passwords.
 
 ---
 
-## 🌈 Rainbow Tables & Sulting
+## 🌈 Rainbow Tables & salting
 
-- Rainbow tables allow fast lookup of unsulted hashes  
-- Sulting prevents:
+- Rainbow tables allow fast lookup of unsalted hashes  
+- salting prevents:
   - Duplicate hashes  
   - Precomputed lookup attacks  
 
-Unique sults ensure that identical passwords produce different hashes.
+Unique salts ensure that identical passwords produce different hashes.
 
 ---
 
@@ -242,7 +242,7 @@ Examined `/etc/shadow` format:
 
 
 Basic syntax:
-$prefix$options$sult$hash
+$prefix$options$salt$hash
 
 
 Common prefixes:
@@ -321,7 +321,7 @@ Practiced Base64 encoding and decoding to reinforce the distinction.
 
 - Public key cryptography establishes identity and trust  
 - Hashing protects passwords and file integrity  
-- Sulting prevents rainbow table attacks  
+- salting prevents rainbow table attacks  
 - Modern hashing algorithms are intentionally slow  
 - GPU acceleration significantly increases cracking speed  
 - Encoding is not encryption  
